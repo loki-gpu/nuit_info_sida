@@ -3,14 +3,32 @@
     <head>
         <title>Jeu</title>
         <link rel="stylesheet" href="css/style-jeu.css">
+        <link rel="stylesheet" href="termynal/css/termynal.css">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Mono">
+        <meta charset="utf-8">
     </head>
     <body>
         <div class="banner">
-            <div>
+            <div id="text">
               <h1>Jeu nuit de l'info</h1>
               <h5>jeu de role</h5>
-              <button>Lancer le Jeu</button>
             </div>  
         </div>
+
+        <div class="game">
+            <div id="termynal" data-termynal>
+                <span data-ty="input">Lors nisDuis autmollit anim id est laborum.</span>
+                <span data-ty="progress"></span>
+            </div>
+
+            <div class="button-block">
+                <button id="btn1">Choix 1</button>
+                <button id="btn2">Choix 2</button>
+            </div>
+        </div>
+            
+
+        <script src="js/jeu.js"></script>
+        <script src="termynal/js/termynal.js" data-termynal-container="#termynal"></script>
     </body>
 </html>

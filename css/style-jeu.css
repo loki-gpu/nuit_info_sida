@@ -1,4 +1,61 @@
+body{
+    background-color: grey;
+}
+
 .banner{
-    background-image: linear-gradient(to bottom right, rgba(228,221,221, 0.50) 2%, rgba(0,0,0, 0.80 ) 96%), url(../img/banner.jpg);
+    background-image: url(../img/banner.jpg);
     background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.banner #text{
+
+    margin-top: 0px;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+
+    text-align: center;
+}
+
+.game{
+    margin-top: 50px;
+
+    margin-right: 20%;
+    margin-left: 20%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.button-block{
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+button{
+    margin-top: 60px;
+
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+button:hover {
+    background-color:#002ead;
+    transition: 0.3s;
 }
